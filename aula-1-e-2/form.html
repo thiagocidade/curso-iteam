@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="form.html" method="post">
+        <label for="nome">Nome Completo *</label>
+        <input type="text" name="nome" id="nome"
+        placeholder="Seu nome" required>
+
+        <br><br>
+        <label for="email">E-mail *</label>
+        <input type="email" name="email" id="email"
+        placeholder="exemplo@email.com" required>
+
+        <br><br>
+        <label for="idade">Idade mínima (18 anos)</label>
+        <input type="number" min="18" name="idade-minima"
+        id="idade" placeholder="18">
+
+        <br><br>
+        <p>Tipo de ingresso</p>
+        
+        <input type="radio" name="ingresso" id="ingresso_padrao"
+        value="padrão" checked> <label for="ingresso_padrao">Padrão</label><br>
+        <input type="radio" name="ingresso" id="ingresso_vip"
+        value="vip"> <label for="ingresso_vip">VIP</label>
+
+        <br><br>
+        <p>Interesses</p>
+        <input type="checkbox" name="interesse" checked value="HTML" id="interesse_html">
+        <label for="interesse_html">HTML</label> <br>
+        <input type="checkbox" name="interesse" value="CSS" id="interesse_css"> 
+        <label for="interesse_css">CSS</label><br>
+        <input type="checkbox" name="interesse" value="JS" id="interesse_js">
+        <label for="interesse_js">JS</label>
+        
+        <br><br>
+
+        <label for="pais">País</label>
+        <select name="pais" id="pais">
+            <option value="Brasil">Brasil</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Uruguai">Uruguai</option>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Enviar">
+
+        <h1>&copy; &reg;</h1>
+
+    </form>
+</body>
+</html>

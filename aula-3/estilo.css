@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo_1, .titulo_2 {
+    font-size: 48px;
+}
+
+.titulo_1 {
+    color: #f00;
+}
+
+.titulo_2 {
+    color: #0f0;
+}
+
+.titulo_3 {
+    color: #00f;
+}
+
+#caixa {
+    background-color: antiquewhite;
+    width: 200px;
+}
+
+a[href$=".pdf"]::after {
+    color: #f00;
+    content: " (PDF)";
+}
+
+.btn {
+    display: block;
+    background-color: #900;
+    border: 2px solid #900;
+    border-radius: 12px;
+    color: #fff;
+    padding: 10px 30px;
+    margin:20px;
+
+    font-size: 24px;
+    font-weight: bold;
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn:hover {
+    background-color: #f00;
+    text-decoration: underline;
+    font-style: italic;
+    color: #0f0;
+}
+
+#box {
+    color: #00f;
+}
+
+.d-none {
+    display: none;
+}
+
+.bola {
+    background-color: #ccc;
+    width: 150px;
+    height: 150px;
+    margin: 0 0 0 30px;
+    border-radius: 15px;
+    border: 6px dashed #00f;
+}
+
+.bola:hover {
+    border: 6px solid #00f;
+}
+
+
+.main h1, .main p{
+    background-color: #ccc;
+    margin-bottom: 10px;
+}
