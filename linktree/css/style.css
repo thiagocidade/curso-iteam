@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EEAECA;
+    background: linear-gradient(195deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    height: 100vh;
+    font-family: "Outfit", sans-serif;
+}
