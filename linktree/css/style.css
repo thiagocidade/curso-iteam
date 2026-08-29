@@ -6,7 +6,116 @@
 
 body {
     background: #EEAECA;
-    background: linear-gradient(195deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 50%);
     height: 100vh;
     font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.content_box {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.perfil img {
+    border-radius: 50%;
+    border: 6px solid #fff;
+}
+
+.perfil h1{
+    font-size: 1.4rem;
+}
+
+.perfil p{
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+.links-principais{
+}
+
+.links-principais ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.links-principais ul a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 2px solid #444;
+    text-decoration: none;
+    color: #444;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.links-principais ul a:hover{
+    background-color: #fff;
+    border: 2px solid #666;
+    color: #666;
+    transition: background-color 0.3s ease;
+}
+
+.links-principais ul a i {
+    border-right: 2px solid #444;
+    padding-right: 30px;
+}
+
+.links-principais ul a span {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.redes-sociais ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 10px;
+}
+
+.redes-sociais ul a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.redes-sociais ul a.icon_twitter:hover {
+    color: #222;
+}
+
+.redes-sociais ul a.icon_facebook:hover {
+    color: #405bf5;
+}
+
+.redes-sociais ul a.icon_instagram:hover {
+    color: #d832f9;
+}
+
+.redes-sociais ul a.icon_spotify:hover {
+    color: #0f6901;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 100;
 }
