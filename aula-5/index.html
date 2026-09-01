@@ -4,17 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=7, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .resultado{
+            border: 0px solid #f00;
+            background-color: antiquewhite;
+            margin: 30px;
+            padding: 10px;
+            display: none;
+        }
+
+
+    </style>
 </head>
 <body>
 
+    <div class="resultado">
+    </div>
+
+    <form id="form" action="index.html" method="get">
+        <label for="nome">Nome Completo *</label>
+        <input type="text" name="nome" id="nome"
+        placeholder="Seu nome">
+
+        <br><br>
+        <label for="email">E-mail *</label>
+        <input type="text" name="email" id="email"
+        placeholder="exemplo@email.com">
+
+        <br><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+
     <script>
-        let a = 2;
-        let b = 6;
+        const form = document.querySelector("#form");
 
-        let resultado = a + b;
+        form.addEventListener('submit', function (event){
+            event.preventDefault()
 
+            const nome = document.querySelector('input[name=nome]');
+            const email = document.querySelector('input[name=email]');
 
-        alert(resultado);
+            const result = document.querySelector('.resultado');
+
+            if (nome.value == ""){
+                result.innerHTML = "O campo <b>nome</b> é obrigatório"
+                result.style.display = "block";
+            }else if (email.value == ""){
+                result.innerHTML = "O campo e-mail é obrigatório"
+                result.style.display = "block";
+            }else {
+                result.innerHTML = "<i class='fa fa-check'></i> Formulário enviado com sucesso!"
+                result.style.display = "block";
+                result.style.background = "#0f0"
+                result.style.border = "1px solid #f00"
+                result.style.borderRadius = "12px"
+            }
+
+            
+        });
     </script>
     
 </body>

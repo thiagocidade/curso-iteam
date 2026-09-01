@@ -43,19 +43,18 @@ body {
     font-size: 0.875rem;
 }
 
-main {
+.content_box main {
     display: flex;
     flex-direction: column;
     gap:40px;
 }
-.links-principais{
-}
+
 
 .links-principais ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 .links-principais ul a {
@@ -67,7 +66,17 @@ main {
     text-decoration: none;
     color: #444;
     padding: 10px;
-    border-radius: 8px;
+    position: relative;
+}
+
+.links-principais .fundo_button{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    z-index: -999;
+    top:-8px;
+    right: 8px;
 }
 
 .links-principais ul a:hover{
@@ -75,6 +84,10 @@ main {
     border: 2px solid #666;
     color: #666;
     transition: background-color 0.3s ease;
+}
+
+.links-principais ul a:hover .fundo_button{
+    background-color: #3bff25;
 }
 
 .links-principais ul a i {
@@ -118,4 +131,44 @@ main {
 footer p {
     text-align: center;
     font-weight: 100;
+}
+
+.content_box_sobre {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content_box_sobre main {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+} 
+.sobre-perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sobre-perfil a{
+    color: #fff;
+}
+
+.sobre-perfil img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.sobre-perfil h1 {
+    font-size: 1rem;
+}
+
+.content_box_sobre main img {
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 12px;
 }
